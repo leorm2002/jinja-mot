@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Report</title>
+    </head>
+    <body>
+        <h1>titolo: {{ titolo }}</h1>
+        <h3>Id corso: {{id_corso}}</h3>
+        <h4>Responsabili cd {{ resp_cd }}</h4>
+        <h4>Responsabili from {{ responsabile_formatore }}</h4>
+        <h5>Sunto</h5>
+        <p>{{ sunto }}</p>
+        {% for intervento in interventi %}
+        <div>
+            <h3>Titolo: {{ intervento.titolo }}</h3>
+            <h4>Relatore: {{ intervento.relatore }}</h4>
+            <h5>Video: {{ intervento.video }}</h5>
+            Keywords:
+            <ul>
+                {% for keyword in intervento.keywords %}
+                <li>keyword</li>
+                {% endfor %}
+            </ul> 
+
+            Normative:
+            <ul>
+                {% for normativa in intervento.normative %}
+                <li><a href="{{ normativa.link }}">{{ normativa.descrizione_normalizzata}}</a></li>
+                {% endfor %}
+            </ul>
+            Giusrisprudenza:
+            <ul>
+                {% for giuri in intervento.giurisprudenza %}
+                <li><a href="{{ giuri.link }}">{{ giuri.descrizione_normalizzata}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% endfor %}
+    </body>
+</html>
+
+
+
+
+
