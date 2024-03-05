@@ -1,0 +1,27 @@
+Id corso: {{id_corso}}
+titolo: {{ titolo }}
+Responsabili cd {{ resp_cd }}
+Responsabili from {{ responsabile_formatore }}
+Sunto:
+{{ sunto }}
+
+{% for intervento in interventi %}
+
+
+    Titolo: {{ intervento.titolo }}
+    Relatore: {{ intervento.relatore }}
+    Video: {{ intervento.video }}
+    Keywords:
+    {% for keyword in intervento.keywords %}keyword
+    {% endfor %}
+    Normative:
+    {% for normativa in intervento.normative %}
+    {{ normativa.descrizione_normalizzata}}
+    {{ normativa.link }}
+    {% endfor %}
+    Giusrisprudenza:
+    {% for giuri in intervento.giurisprudenza %}
+    {{ giuri.descrizione_normalizzata }}
+    {{ giuri.link }}
+    {% endfor %}
+{% endfor %}

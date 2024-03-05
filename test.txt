@@ -1,0 +1,114 @@
+Id corso: TM23003_20231002
+titolo: Titolo (test)
+Responsabili cd Gianluca Grasso, Antonella Ciriello, Lorenza Calcagno e Gabriele Positano
+Responsabili from -
+Sunto:
+La sessione presso la Scuola superiore della magistratura destinata al tirocinio mirato dei magistrati ordinari in materia civilistica è organizzata in quattro settimane non consecutive. La concezione dei programmi si fonda, oltre che sulle indicazioni desumibili dal decreto istitutivo della Scuola e sulle direttive del CSM, anche sull’esperienza degli anni passati e sulle esigenze formative segnalate dai tirocinanti.
+Il tirocinio mirato è rivolto al completamento della formazione di base, nonché all’avviamento del magistrato in tirocinio allo specifico esercizio delle funzioni affidategli: questa fase è quindi destinata a perfezionare la conversione delle nozioni teoriche acquisite durante lo studio per il concorso in un bagaglio di esperienze pratiche e operative, indispensabili per svolgere le funzioni giudiziarie, alternando lo studio di argomenti processuali e sostanziali, nonché approfondendo argomenti controversi che la prassi giudiziaria riscontra con maggiore frequenza e risolve in maniera non sempre univoca.
+Al fine di rendere equilibrato il rapporto tra i vari aspetti di interesse, si prevede una pluralità di temi da trattare:
+in particolare, in alcune sessioni, sviluppate in sede plenaria con la metodologia della relazione seguita da dibattito, saranno affrontate materie di interesse più generalizzato, anche di natura organizzativa; in altre sessioni, sviluppate in cinque raggruppamenti più ristretti, con la metodologia del gruppo di lavoro, saranno affrontati i temi settoriali che più caratterizzano le materie del civile ordinario, della famiglia e della volontaria giurisdizione, del diritto del lavoro, delle esecuzioni, del fallimentare e societario.
+Al fine di valorizzare l’auto-percezione dei bisogni formativi, saranno i singoli MOT a decidere a quale gruppo di lavoro partecipare.
+Approfondimenti specifici saranno destinati al processo civile telematico e alla scrittura dei provvedimenti giudiziari.
+
+
+
+
+    Titolo: Manuale per il magistrato in prima destinazione: la ragionevole durata del processo; la conoscenza del ruolo e l’organizzazione del lavoro; l’agenda del giudice; la gestione del procedimento nel rapporto con parti, avvocati e cancellerie. L’Ufficio per il processo.
+    Relatore: Diego Ragozini
+    Video: https://youtu.be/QLzISO1ghCI
+    Keywords:
+    keyword
+    keyword
+    keyword
+    keyword
+    keyword
+    
+    Normative:
+    
+    Regio decreto del 16 marzo 1942, num. 267, co. 6
+    http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;267:1~6
+    
+    Giusrisprudenza:
+    
+    Corte costituzionale, sent. num. 239 del 2014
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2014:239
+    
+    Corte costituzionale, sent. num. 30 del 2022
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2022:30
+    
+    Corte costituzionale, sent. num. 265 del 2010
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2010:265
+    
+    Corte di Cassazione, sent. num. 30140 del 2019
+    nan
+    
+    Altro
+    nan
+    
+
+
+
+    Titolo: Manuale per il magistrato in prima destinazione: la ragionevole durata del processo; la conoscenza del ruolo e l’organizzazione del lavoro; l’agenda del giudice; la gestione del procedimento nel rapporto con parti, avvocati e cancellerie. L’Ufficio per il processo.
+    Relatore: Michele Ruvolo
+    Video: https://youtu.be/iMqsAdCh7AY
+    Keywords:
+    keyword
+    keyword
+    keyword
+    keyword
+    keyword
+    
+    Normative:
+    
+    Regio decreto del 16 marzo 1942, num. 267, co. 3
+    http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;267:1~3
+    
+    Giusrisprudenza:
+    
+    Corte costituzionale, sent. num. 14 del 1964
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:1964:14
+    
+    Corte costituzionale, sent. num. 187 del 2019
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2019:187
+    
+    Corte costituzionale, sent. num. 85 del 2013
+    https://e-justice.europa.eu/ecli/it/ECLI:IT:COST:1985:213.html
+    
+    Corte di Cassazione, sent. num. 15628 del 2006
+    nan
+    
+    Altro
+    nan
+    
+
+
+
+    Titolo: L’uso di consolle: dimostrazione pratica sulle potenzialità dello strumento e delle risorse per l’agenda del giudice
+    Relatore: Alberto Mazza
+    Video: https://youtu.be/fGWSEjlI7EM
+    Keywords:
+    keyword
+    keyword
+    keyword
+    keyword
+    keyword
+    
+    Normative:
+    
+    Giusrisprudenza:
+    
+    Corte costituzionale, sent. num. 170 del 1984
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:1984:170
+    
+    Corte costituzionale, sent. num. 33 del 2021
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2021:33
+    
+    Corte costituzionale, sent. num. 191 del 2020
+    http://www.cortecostituzionale.it/actionSchedaPronuncia.do?param_ecli=ECLI:IT:COST:2020:191
+    
+    Corte di Cassazione, sent. num. 5 del 2007
+    nan
+    
+    Altro
+    nan
+    
