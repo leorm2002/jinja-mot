@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report</title>
     <style>
-
         html {
-            font-family: 'EB Garamond', sans-serif;
+            font-family: 'Helvetica', sans-serif;
         }
-        
-        a { color: inherit; }
-        .indice a:hover {color: rgb(9, 68, 206);}
+
+        a {
+            color: inherit;
+        }
+
+        .indice a:hover {
+            color: rgb(9, 68, 206);
+        }
 
         div.chapter {
             page-break-after: always;
@@ -47,23 +51,25 @@
 
 <body>
     <div class="firstPage">
-        <h1>Report </h1>
+        <h1 style="color: #0049B7;">Archivio multimediale (E-pub) </h1>
+        <h6 style="color: #0049B7;">(sperimentazione)</h6>
     </div>
     <div class="chapter">
     </div>
+    <!-- Indice corsi -->
     <div class="indice">
-        <h2>Indice per corso</h2>
+        <h2 style="color: OrangeRed;">Indice</h2>
         {% for corso in corsi%}
         <ul>
             <li>
                 <a href="#{{corso.id_corso}}">
-                    {{ corso.id_corso }} - {{ corso.titolo}}
+                    <b>{{ corso.titolo}}</b> ({{ corso.id_corso }})
                 </a>
                 <ul>
                     {% for intervento in corso.interventi %}
 
                     <a href="#{{intervento.id_intervento}}">
-                        <li> {{ intervento.titolo }} - {{ intervento.relatore }}</li>
+                        <li> <i>{{ intervento.titolo }}</i> - {{ intervento.relatore }}</li>
                     </a>{% endfor %}
                 </ul>
             </li>
@@ -71,18 +77,20 @@
         {% endfor %}
 
     </div>
+    <!-- Indice relatore -->
     <div class="indice">
-        <h2>Indice per relatore</h2>
+        <h2 style="color: OrangeRed;">Indice per Relatore</h2>
         {% for indice_rel in indice %}
         <ul>
             <li>
+                <!-- <b> {{ indice_rel.relatore }}</b> -->
                 {{ indice_rel.relatore }}
-            </a>
+                </a>
                 <ul>
                     {% for intervento in indice_rel.interventi %}
 
                     <a href="#{{intervento.id_intervento}}">
-                        <li> {{ intervento.titolo }}</li>
+                        <li><i>{{ intervento.titolo }} ({{ intervento.id_corso }})<i></li>
                     </a>{% endfor %}
                 </ul>
             </li>
@@ -92,36 +100,39 @@
     </div>
     <div class="chapter">
     </div>
+    <!-- Corsi -->
     {% for corso in corsi%}
     <div class="chapter">
         <a name="{{corso.id_corso}}">
-            <h2>{{ corso.titolo }}</h2>
+            <h3 style="color: OrangeRed;">{{ corso.titolo }}</h3>
         </a>
-
-        <h3>Id corso: ({{corso.id_corso}})</h3>
-        <p>Responsabili Comitato direttivo: {{ corso.resp_cd }}</p>
-        <p>Responsabili formatori: {{ corso.responsabile_formatore }}</p>
+        <p>Responsabili Comitato direttivo: <i>{{ corso.resp_cd }}</i></p>
+        <p>Responsabili formatori: <i>{{ corso.responsabile_formatore }}</i> </p>
         <p>{{ corso.sunto }}</p>
         {% for intervento in corso.interventi %}
         <div class="intervento">
             <hr>
             <a name="{{intervento.id_intervento}}">
-                <h3>{{ intervento.titolo }}</h3>
+
+                <h4 style="color: green;">{{ intervento.titolo }}</h4>
+
             </a>
             <div class="right">
                 <h4>{{ intervento.relatore }}</h4>
             </div>
             {% if "" != intervento.video %}
+            Intervento:
             <a href="{{ intervento.video }}"><img src="yt.png" alt="video" width="30px" height="20px"></a>
-            Vai al video
+
             <br>
             {% endif %}
-            Keywords:
+            <!--    Keywords:
             <p>
                 {% for keyword in intervento.keywords %}
                 {{keyword}},
                 {% endfor %}
             </p>
+        -->
             {% if intervento.normative|length > 0 %}
 
             Normativa (sperimentale):
