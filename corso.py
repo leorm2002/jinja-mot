@@ -1,3 +1,4 @@
+from cleaners import clean
 class Corso:
     id_corso = None
     titolo = None
@@ -20,6 +21,6 @@ class Corso:
             "titolo": self.titolo if self.titolo else "",
             "resp_cd": self.resp_cd if self.resp_cd else "",
             "responsabile_formatore": self.responsabile_formatore if self.responsabile_formatore else "",
-            "sunto": self.sunto if self.sunto else "",
+            "sunto": clean(self.sunto),
             "interventi": [intervento.to_dict() for intervento in self.interventi] if self.interventi else []
         }

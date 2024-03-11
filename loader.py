@@ -23,6 +23,9 @@ def load_corsi(corsi, db_interventi):
         corsiOut.append(Corso(id_corso, titolo, resp_cd, responsabile_formatore, sunto, interventi))
     return corsiOut
 
+def sorta(norme):
+    return norme.posizione
+
 def load_interventi(interventi, db_norme, db_giurisprudenza):
     #ritorna una lista di interventi
     db_interventi = {}
@@ -47,7 +50,10 @@ def load_interventi(interventi, db_norme, db_giurisprudenza):
         keywords = [key1, key2, key3, key4, key5]
         normative = db_norme[id_intervento] if id_intervento in db_norme else []
         giurisprudenza = db_giurisprudenza[id_intervento] if id_intervento in db_giurisprudenza else []
-        intervento = Intervento(titolo, relatore, video, keywords,abstract, normative, giurisprudenza)
+        #sorto
+        normative.sort(key=lambda x: x.posizione, reverse=False)
+        giurisprudenza.sort(key=lambda x: x.posizione, reverse=False)
+        intervento = Intervento(titolo, relatore, video, keywords,abstract, normative, giurisprudenza, id_intervento)
         if id_corso in db_interventi:
             db_interventi[id_corso].append(intervento)
         else:
@@ -61,10 +67,11 @@ def load_norme(norme):
         id_intervento = norma[1]
         descrizione_normalizzata = norma[4]
         link = norma[6]
+        posizione = norma[2]
         if id_intervento in db_norme:
-            db_norme[id_intervento].append(Norme(descrizione_normalizzata, link))
+            db_norme[id_intervento].append(Norme(descrizione_normalizzata, link, posizione))
         else:
-            db_norme[id_intervento] = [Norme(descrizione_normalizzata, link)]
+            db_norme[id_intervento] = [Norme(descrizione_normalizzata, link, posizione)]
     return db_norme
 
 def load_giurisprudenza(giurisprudenza):
@@ -74,10 +81,12 @@ def load_giurisprudenza(giurisprudenza):
         id_intervento = giurisprudenza[1]
         descrizione_normalizzata = giurisprudenza[4]
         link = giurisprudenza[6]
+        posizione = giurisprudenza[2]
+
         if id_intervento in db_giurisprudenza:
-            db_giurisprudenza[id_intervento].append(Giurisprudenza(descrizione_normalizzata, link))
+            db_giurisprudenza[id_intervento].append(Giurisprudenza(descrizione_normalizzata, link, posizione))
         else:
-            db_giurisprudenza[id_intervento] = [Giurisprudenza(descrizione_normalizzata, link)]
+            db_giurisprudenza[id_intervento] = [Giurisprudenza(descrizione_normalizzata, link, posizione)]
     return db_giurisprudenza
 
 def get_db_corsi():

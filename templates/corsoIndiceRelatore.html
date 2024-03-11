@@ -53,14 +53,13 @@
     </div>
     <div class="indice">
         <h2>Indice</h2>
-        {% for corso in corsi%}
+        {% for indice_rel in indice %}
         <ul>
             <li>
-                <a href="#{{corso.id_corso}}">
-                    {{ corso.id_corso }} - {{ corso.titolo}}
-                </a>
+                {{ indice_rel.relatore }}
+            </a>
                 <ul>
-                    {% for intervento in corso.interventi %}
+                    {% for intervento in indice_rel.interventi %}
 
                     <a href="#{{intervento.id_intervento}}">
                         <li> {{ intervento.titolo }} - {{ intervento.relatore }}</li>
