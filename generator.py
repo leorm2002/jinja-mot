@@ -5,6 +5,7 @@ from loader import get_db_corsi
 environment = Environment(loader=FileSystemLoader("templates/"))
 templateCorso = environment.get_template("corso.html")
 templateCorso2 = environment.get_template("corsoIndiceRelatore.html")
+templateCorso3 = environment.get_template("corsoIndiceCompleto.html")
 
 def genera_corso(corsi):
     filename = "test.html"
@@ -40,6 +41,12 @@ def genera_corso_indice_interventi(corsi, indice_relatore):
     with open(filename, "w", encoding="utf-8") as file:
         file.write(templateCorso2.render({"corsi" : corsi, "indice" : indice_relatore}))
 
+
+def genera_corso_indice_completo(corsi, indice_relatore):
+    filename = "report.html"
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write(templateCorso3.render({"corsi" : corsi, "indice" : indice_relatore}))
+
 def main():
     db_corsi = get_db_corsi()
     corsi = []
@@ -48,6 +55,7 @@ def main():
     genera_corso(corsi)
     indice_relatore = genera_indice_per_relatore(db_corsi)
     genera_corso_indice_interventi(corsi, indice_relatore)
+    genera_corso_indice_completo(corsi, indice_relatore)
 
 if __name__ == '__main__':
     main()

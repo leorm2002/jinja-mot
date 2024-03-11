@@ -52,7 +52,27 @@
     <div class="chapter">
     </div>
     <div class="indice">
-        <h2>Indice</h2>
+        <h2>Indice per corso</h2>
+        {% for corso in corsi%}
+        <ul>
+            <li>
+                <a href="#{{corso.id_corso}}">
+                    {{ corso.id_corso }} - {{ corso.titolo}}
+                </a>
+                <ul>
+                    {% for intervento in corso.interventi %}
+
+                    <a href="#{{intervento.id_intervento}}">
+                        <li> {{ intervento.titolo }} - {{ intervento.relatore }}</li>
+                    </a>{% endfor %}
+                </ul>
+            </li>
+        </ul>
+        {% endfor %}
+
+    </div>
+    <div class="indice">
+        <h2>Indice per relatore</h2>
         {% for indice_rel in indice %}
         <ul>
             <li>
