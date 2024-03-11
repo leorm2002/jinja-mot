@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
-
+import re
 from loader import get_db_corsi
 
 environment = Environment(loader=FileSystemLoader("templates/"))
@@ -15,6 +15,7 @@ def getCognomeNomeRelatore(id_intervento):
     #TM23003_20231006_CatellaniPatrizia esempio input
     cognomeNome = id_intervento.split("_")[-1]
     #todo split
+    cognomeNome = " ".join(re.split('(?<=.)(?=[A-Z])', cognomeNome))
     return cognomeNome
 def genera_indice_per_relatore(db_corsi):
     indice = {}
@@ -30,6 +31,7 @@ def genera_indice_per_relatore(db_corsi):
     for relatore in indice.keys():
         temp = {"relatore" : relatore, "interventi" : indice[relatore]}
         ret.append(temp)
+    ret.sort(key=lambda x: x["relatore"])
     return ret
 
 
